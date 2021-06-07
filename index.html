@@ -23,50 +23,53 @@
 <div class="container-fluid"> 
     <!-- Nav Bar -->
 
-    <nav class="navbar navbar-expand-lg   navbar-dark">
-      <a class="navbar-brand" href="">knitians</a>
-       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-              <a class="nav-link active"   href="">home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link active  dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              branch
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active " href="">help</a>
-        </li>
-         
-          <li class="nav-item">
-              <a class="nav-link" href="">logout</a>
-          </li>
-      </ul>
-   </div>
-  </nav>
+    <nav nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand">KNITHUB</a>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
   
     <!-- Title -->
 
     <div class="row">
       <div class="col-lg-6">  
       <h1> Get Your Subject Notes Here for free</h1>
+      <form action="/index1.html" method="get">
        
-      <button   type="button" class="btn btn-outline subject-button"><i class="icons fa fa-book" aria-hidden="true"></i>subject</button> 
+      <select name="branch" id="cars" aria-placeholder="branch">
+        <option value="MCA">MCA</option>
+        <option value="B_it">Btech cs</option>
+        <option value="B_mc">btech mc</option>
+        <option value="B_ec">Btech ec</option>
+        <option value="B_elt">Btech el</option>
+        </select>
        
         
-       <button   type="button" class="btn btn-outline semester-button"><i class="icons fa fa-graduation-cap" aria-hidden="true"></i>semester</button> 
+      <select name="sem" id="cars" aria-placeholder="branch">
+        <option value="sm1">semester 1</option>
+        <option value="sm2">semester 2</option>
+        <option value="sm3">semester 3</option>
+        <option value="sm4">semester 4</option>
+        <option value="sm5">semester 5</option>
+        <option value="sm6">semester 6</option>
+      </select> 
+
+      <select name="subject" id="cars" aria-placeholder="branch">
+        <option value="sm1">subject 1</option>
+        <option value="sm2">subject 2</option>
+        <option value="sm3">Subject 3</option>
+        <option value="sm4">subject 4</option>
+        <option value="sm5">subject 5</option>
+        <option value="sm6">subject 6</option>
        <button   type="button" class="btn btn-dark  btn btn-primary btn-lg getnotes-button">   <i class="icons fa fa-sticky-note"  ></i> get notes </button> 
       </div>
+      <input type="submit" value="Submit">
+    </form>
+
     
     <div class="col-lg-6">
       <img class="title-image" src="images/a78bff73c12e00604ea5c3032cd857b3.jpg" alt="iphone-mockup"  >
